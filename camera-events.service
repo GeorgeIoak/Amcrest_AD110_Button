@@ -1,0 +1,17 @@
+[Unit]
+Description=Amcrest Doorbell Events
+ 
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/src/Python-3.8.5/bin/python3.8 -u /home/pi/camera-events.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=AmcrestDoorbell
+User=pi
+Group=pi
+Restart=always
+RestartSec=60
+ 
+[Install]
+WantedBy=multi-user.target
