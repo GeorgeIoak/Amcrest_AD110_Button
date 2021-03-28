@@ -1,6 +1,7 @@
 # Amcrest_AD110_Button
  Capture doorbell button presses
 
+Based ENTIRELY on https://github.com/MYeager1967/camera-events
  
 Copy camera-events.service to /lib/systemd/system/
 sudo systemctl daemon-reload
